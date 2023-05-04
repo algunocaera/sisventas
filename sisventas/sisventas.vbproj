@@ -30,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Logica\" />
     <Folder Include="Reportes\" />
   </ItemGroup>
 

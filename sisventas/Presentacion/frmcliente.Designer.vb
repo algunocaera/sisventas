@@ -23,27 +23,27 @@ Partial Class frmcliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
-        txtidcliente = New TextBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        txtnombre = New TextBox()
-        Label3 = New Label()
-        txtapellidos = New TextBox()
-        Label4 = New Label()
-        txtdireccion = New TextBox()
-        Label5 = New Label()
-        txttelefono = New TextBox()
         Label6 = New Label()
         txtdni = New TextBox()
+        Label5 = New Label()
+        txttelefono = New TextBox()
+        Label4 = New Label()
+        txtdireccion = New TextBox()
+        Label3 = New Label()
+        txtapellidos = New TextBox()
+        Label2 = New Label()
+        txtnombre = New TextBox()
+        Label1 = New Label()
+        txtidcliente = New TextBox()
         btnnuevo = New Button()
         btneditar = New Button()
         btncancelar = New Button()
         GroupBox2 = New GroupBox()
-        datalistado = New DataGridView()
-        cbocampo = New ComboBox()
-        txtbuscar = New TextBox()
-        inexistente = New LinkLabel()
         btneliminar = New Button()
+        inexistente = New LinkLabel()
+        txtbuscar = New TextBox()
+        cbocampo = New ComboBox()
+        datalistado = New DataGridView()
         Eliminar = New DataGridViewCheckBoxColumn()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
@@ -71,69 +71,22 @@ Partial Class frmcliente
         GroupBox1.TabStop = False
         GroupBox1.Text = "Mantenimiento"
         ' 
-        ' txtidcliente
+        ' Label6
         ' 
-        txtidcliente.Location = New Point(236, 44)
-        txtidcliente.Name = "txtidcliente"
-        txtidcliente.Size = New Size(154, 23)
-        txtidcliente.TabIndex = 0
+        Label6.AutoSize = True
+        Label6.Location = New Point(61, 286)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(27, 15)
+        Label6.TabIndex = 11
+        Label6.Text = "DNI"
         ' 
-        ' Label1
+        ' txtdni
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(61, 52)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(52, 15)
-        Label1.TabIndex = 1
-        Label1.Text = "Idcliente"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(61, 94)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(51, 15)
-        Label2.TabIndex = 3
-        Label2.Text = "Nombre"
-        ' 
-        ' txtnombre
-        ' 
-        txtnombre.Location = New Point(236, 86)
-        txtnombre.Name = "txtnombre"
-        txtnombre.Size = New Size(154, 23)
-        txtnombre.TabIndex = 2
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(61, 140)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(56, 15)
-        Label3.TabIndex = 5
-        Label3.Text = "Apellidos"
-        ' 
-        ' txtapellidos
-        ' 
-        txtapellidos.Location = New Point(236, 132)
-        txtapellidos.Name = "txtapellidos"
-        txtapellidos.Size = New Size(154, 23)
-        txtapellidos.TabIndex = 4
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(61, 189)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(57, 15)
-        Label4.TabIndex = 7
-        Label4.Text = "Dirección"
-        ' 
-        ' txtdireccion
-        ' 
-        txtdireccion.Location = New Point(236, 181)
-        txtdireccion.Name = "txtdireccion"
-        txtdireccion.Size = New Size(154, 23)
-        txtdireccion.TabIndex = 6
+        txtdni.Location = New Point(236, 278)
+        txtdni.MaxLength = 8
+        txtdni.Name = "txtdni"
+        txtdni.Size = New Size(154, 23)
+        txtdni.TabIndex = 10
         ' 
         ' Label5
         ' 
@@ -152,22 +105,69 @@ Partial Class frmcliente
         txttelefono.Size = New Size(154, 23)
         txttelefono.TabIndex = 8
         ' 
-        ' Label6
+        ' Label4
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(61, 286)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(27, 15)
-        Label6.TabIndex = 11
-        Label6.Text = "DNI"
+        Label4.AutoSize = True
+        Label4.Location = New Point(61, 189)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(57, 15)
+        Label4.TabIndex = 7
+        Label4.Text = "Dirección"
         ' 
-        ' txtdni
+        ' txtdireccion
         ' 
-        txtdni.Location = New Point(236, 278)
-        txtdni.MaxLength = 8
-        txtdni.Name = "txtdni"
-        txtdni.Size = New Size(154, 23)
-        txtdni.TabIndex = 10
+        txtdireccion.Location = New Point(236, 181)
+        txtdireccion.Name = "txtdireccion"
+        txtdireccion.Size = New Size(154, 23)
+        txtdireccion.TabIndex = 6
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(61, 140)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(56, 15)
+        Label3.TabIndex = 5
+        Label3.Text = "Apellidos"
+        ' 
+        ' txtapellidos
+        ' 
+        txtapellidos.Location = New Point(236, 132)
+        txtapellidos.Name = "txtapellidos"
+        txtapellidos.Size = New Size(154, 23)
+        txtapellidos.TabIndex = 4
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(61, 94)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(51, 15)
+        Label2.TabIndex = 3
+        Label2.Text = "Nombre"
+        ' 
+        ' txtnombre
+        ' 
+        txtnombre.Location = New Point(236, 86)
+        txtnombre.Name = "txtnombre"
+        txtnombre.Size = New Size(154, 23)
+        txtnombre.TabIndex = 2
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(61, 52)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(52, 15)
+        Label1.TabIndex = 1
+        Label1.Text = "Idcliente"
+        ' 
+        ' txtidcliente
+        ' 
+        txtidcliente.Location = New Point(236, 44)
+        txtidcliente.Name = "txtidcliente"
+        txtidcliente.Size = New Size(154, 23)
+        txtidcliente.TabIndex = 0
         ' 
         ' btnnuevo
         ' 
@@ -205,10 +205,46 @@ Partial Class frmcliente
         GroupBox2.Controls.Add(datalistado)
         GroupBox2.Location = New Point(576, 64)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(345, 418)
+        GroupBox2.Size = New Size(452, 418)
         GroupBox2.TabIndex = 4
         GroupBox2.TabStop = False
         GroupBox2.Text = "Listado de Clientes"
+        ' 
+        ' btneliminar
+        ' 
+        btneliminar.Location = New Point(44, 357)
+        btneliminar.Name = "btneliminar"
+        btneliminar.Size = New Size(75, 23)
+        btneliminar.TabIndex = 4
+        btneliminar.Text = "Eliminar"
+        btneliminar.UseVisualStyleBackColor = True
+        ' 
+        ' inexistente
+        ' 
+        inexistente.AutoSize = True
+        inexistente.Location = New Point(170, 204)
+        inexistente.Name = "inexistente"
+        inexistente.Size = New Size(102, 15)
+        inexistente.TabIndex = 3
+        inexistente.TabStop = True
+        inexistente.Text = "Datos inexistentes"
+        ' 
+        ' txtbuscar
+        ' 
+        txtbuscar.Location = New Point(188, 35)
+        txtbuscar.Name = "txtbuscar"
+        txtbuscar.Size = New Size(122, 23)
+        txtbuscar.TabIndex = 2
+        ' 
+        ' cbocampo
+        ' 
+        cbocampo.FormattingEnabled = True
+        cbocampo.Items.AddRange(New Object() {"nombre", "apellidos", "dni", "telefono"})
+        cbocampo.Location = New Point(44, 35)
+        cbocampo.Name = "cbocampo"
+        cbocampo.Size = New Size(121, 23)
+        cbocampo.TabIndex = 1
+        cbocampo.Text = "dni"
         ' 
         ' datalistado
         ' 
@@ -221,44 +257,8 @@ Partial Class frmcliente
         datalistado.ReadOnly = True
         datalistado.RowTemplate.Height = 25
         datalistado.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        datalistado.Size = New Size(281, 247)
+        datalistado.Size = New Size(380, 247)
         datalistado.TabIndex = 0
-        ' 
-        ' cbocampo
-        ' 
-        cbocampo.FormattingEnabled = True
-        cbocampo.Items.AddRange(New Object() {"nombre", "apellidos", "dni", "telefono"})
-        cbocampo.Location = New Point(44, 35)
-        cbocampo.Name = "cbocampo"
-        cbocampo.Size = New Size(121, 23)
-        cbocampo.TabIndex = 1
-        cbocampo.Text = "dni"
-        ' 
-        ' txtbuscar
-        ' 
-        txtbuscar.Location = New Point(188, 35)
-        txtbuscar.Name = "txtbuscar"
-        txtbuscar.Size = New Size(122, 23)
-        txtbuscar.TabIndex = 2
-        ' 
-        ' inexistente
-        ' 
-        inexistente.AutoSize = True
-        inexistente.Location = New Point(99, 174)
-        inexistente.Name = "inexistente"
-        inexistente.Size = New Size(102, 15)
-        inexistente.TabIndex = 3
-        inexistente.TabStop = True
-        inexistente.Text = "Datos inexistentes"
-        ' 
-        ' btneliminar
-        ' 
-        btneliminar.Location = New Point(44, 357)
-        btneliminar.Name = "btneliminar"
-        btneliminar.Size = New Size(75, 23)
-        btneliminar.TabIndex = 4
-        btneliminar.Text = "Eliminar"
-        btneliminar.UseVisualStyleBackColor = True
         ' 
         ' Eliminar
         ' 
@@ -270,7 +270,7 @@ Partial Class frmcliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(954, 529)
+        ClientSize = New Size(1052, 529)
         Controls.Add(GroupBox2)
         Controls.Add(btncancelar)
         Controls.Add(btneditar)

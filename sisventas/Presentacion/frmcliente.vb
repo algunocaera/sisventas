@@ -43,7 +43,7 @@
             dv.RowFilter = cbocampo.Text & " like '" & txtbuscar.Text & "%'"
 
             If dv.Count <> 0 Then
-                inexistente.Visible = False 
+                inexistente.Visible = False
                 datalistado.DataSource = dv
                 ocultar_columnas()
             Else
@@ -58,6 +58,10 @@
     End Sub
     Private Sub ocultar_columnas()
         datalistado.Columns(1).Visible = False
+
+    End Sub
+
+    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
 
     End Sub
 End Class

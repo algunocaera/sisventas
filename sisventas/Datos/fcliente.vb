@@ -15,6 +15,7 @@ Public Class fcliente
                 Dim dt As New DataTable
                 Dim da As New SqlDataAdapter(cmd)
                 da.Fill(dt)
+                Return dt
             Else
                 Return Nothing
             End If
